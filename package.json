@@ -1,13 +1,12 @@
 {
   "name": "react-context-patterns",
-  "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "react context patterns with a sample app",
   "main": "index.html",
   "scripts": {
-    "start": "parcel serve index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel serve index.html"
   },
-  "author": "",
+  "author": "Ronald Chen",
   "license": "ISC",
   "dependencies": {
     "react": "17.0.1",
