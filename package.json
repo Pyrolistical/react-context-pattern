@@ -1,0 +1,20 @@
+{
+  "name": "react-context-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "parcel": "2.0.0-beta.2",
+    "prettier": "2.2.1"
+  }
+}
