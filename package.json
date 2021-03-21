@@ -4,7 +4,8 @@
   "description": "react context patterns with a sample app",
   "main": "index.html",
   "scripts": {
-    "start": "parcel serve index.html"
+    "start": "parcel serve index.html",
+    "format": "prettier --write ."
   },
   "author": "Ronald Chen",
   "license": "ISC",
