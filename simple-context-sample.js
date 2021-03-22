@@ -1,16 +1,16 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-import {Provider, useValue, useSetValue} from './simple-context';
+import {ColorProvider, useColor, useSetColor} from './simple-context';
 
 function Nav() {
-  const value = useValue();
-  const setValue = useSetValue();
+  const color = useColor();
+  const setColor = useSetColor();
 
   return (
     <div>
       <h2>Nav</h2>
-      <select value={value} onChange={({target: {value}}) => setValue(value)}>
+      <select value={color} onChange={({target: {value}}) => setColor(value)}>
         <option value="red"> red </option>
         <option value="green"> green </option>
         <option value="blue"> blue </option>
@@ -20,21 +20,21 @@ function Nav() {
 }
 
 function Body() {
-  const value = useValue();
+  const color = useColor();
   return (
     <div>
       <h2>Body</h2>
-      <p>You've selected {value}</p>
+      <p>You've selected {color}</p>
     </div>
   );
 }
 
 function Application() {
   return (
-    <Provider defaultValue="red">
+    <ColorProvider defaultColor="red">
       <Nav />
       <Body />
-    </Provider>
+    </ColorProvider>
   );
 }
 

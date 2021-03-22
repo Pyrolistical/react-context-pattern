@@ -1,31 +1,31 @@
 import React, {createContext, useContext, useState} from 'react';
 
-const Context = createContext({
+const ColorContext = createContext({
   value: undefined,
   setValue: () => {},
 });
 
-export function Provider({defaultValue, children}) {
-  const [value, setValue] = useState(defaultValue);
+export function ColorProvider({defaultColor, children}) {
+  const [color, setColor] = useState(defaultColor);
 
   return (
-    <Context.Provider
+    <ColorContext.Provider
       value={{
-        value,
-        setValue,
+        color,
+        setColor,
       }}
     >
       {children}
-    </Context.Provider>
+    </ColorContext.Provider>
   );
 }
 
-export function useValue() {
-  const {value} = useContext(Context);
-  return value;
+export function useColor() {
+  const {color} = useContext(ColorContext);
+  return color;
 }
 
-export function useSetValue() {
-  const {setValue} = useContext(Context);
-  return setValue;
+export function useSetColor() {
+  const {setColor} = useContext(ColorContext);
+  return setColor;
 }
