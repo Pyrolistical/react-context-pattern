@@ -11,9 +11,9 @@ function Nav() {
     <div>
       <h2>Nav</h2>
       <select value={color} onChange={({target: {value}}) => setColor(value)}>
-        <option value="red"> red </option>
-        <option value="green"> green </option>
-        <option value="blue"> blue </option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
       </select>
     </div>
   );
