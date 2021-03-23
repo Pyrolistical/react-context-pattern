@@ -1,9 +1,6 @@
 import React, {createContext, useContext, useState} from 'react';
 
-const ColorContext = createContext({
-  value: undefined,
-  setValue: () => {},
-});
+const ColorContext = createContext();
 
 export function ColorProvider({defaultColor, children}) {
   const [color, setColor] = useState(defaultColor);
