@@ -1,9 +1,6 @@
 import React, {createContext, useContext, useState, useEffect} from 'react';
 
-const UserContext = createContext({
-  user: undefined,
-  state: 'loading',
-});
+const UserContext = createContext();
 
 export function UserProvider({children}) {
   const [state, setState] = useState('loading');
