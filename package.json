@@ -1,7 +1,7 @@
 {
-  "name": "react-context-patterns",
+  "name": "react-context-pattern",
   "private": true,
-  "description": "react context patterns with a sample app",
+  "description": "react context pattern with a sample app",
   "main": "index.html",
   "scripts": {
     "start": "parcel serve index.html",
